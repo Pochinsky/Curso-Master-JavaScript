@@ -1,0 +1,23 @@
+.header {
+  margin: 3rem 0 4rem 0;
+}
+
+.header .header__container {
+  background-color: #3e670f;
+  padding: 2rem 4rem;
+  width: min-content;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .header .header__container {
+    display: block;
+    width: max-content;
+  }
+}
+
+.header .header__container-h1 {
+  color: #fff;
+  display: inline;
+  text-transform: uppercase;
+}

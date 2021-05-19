@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("tags.css");
+@import url("header.css");
+@import url("nav.css");
+@import url("global.css");
+@import url("article.css");
+@import url("main.css");
+@import url("sidebar.css");
+
+.form-identify {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-identify .form-identify__label {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.form-identify .form-identify__input {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  box-shadow: 0 0 3px #000;
+}
+
+.form-identify .form-identify__submit {
+  background-color: #3e670f;
+  color: #fff;
+  box-shadow: 0 0 2px #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.form-identify .form-identify__input:focus {
+  box-shadow: 0 0 2px #0000ff;
+}
+
+.footer {
+  width: 80%;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background-color: #353232;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__p {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}

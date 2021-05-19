@@ -1,0 +1,35 @@
+.articles {
+  margin: 3rem 0;
+}
+
+.articles .article {
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  column-gap: 3rem;
+}
+
+.articles .article .article__h2 {
+  font-size: 4rem;
+  color: #353232;
+}
+
+.articles .article .article__date {
+  font-size: 2rem;
+  color: #a2a1a1;
+}
+
+.articles .article .article__readmore {
+  background-color: #3e670f;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  margin: 2rem auto 2rem 0;
+  font-size: 1.8rem;
+}
+
+.articles .article .article__p {
+  margin: 2rem 0;
+  text-align: justify;
+}
