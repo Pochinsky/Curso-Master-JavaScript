@@ -1,0 +1,35 @@
+.theme {
+  position: relative;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: 1rem auto;
+  align-items: center;
+  background-color: rgba(51, 51, 51, 0.3);
+  padding: 0.3rem 0.5rem;
+}
+
+@media (min-width: 870px) {
+  .theme {
+    position: fixed;
+    top: 40%;
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.theme #lightmode,
+.theme #darkmode {
+  display: block;
+  padding: 0.2rem 0.5rem;
+  margin: 1rem auto;
+  background-color: rgba(102, 102, 102, 0.6);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.theme #lightmode {
+  display: none;
+}

@@ -1,0 +1,14 @@
+footer {
+    margin: 6rem auto 0 auto;
+    width: 95%;
+    background-color: $blue;
+    padding: 3rem 1rem;
+    text-align: center;
+    color: $white;
+}
+
+@include tablet {
+    footer {
+        max-width: 70%;
+    }
+}

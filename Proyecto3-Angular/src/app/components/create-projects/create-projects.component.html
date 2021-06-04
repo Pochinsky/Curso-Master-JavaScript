@@ -1,0 +1,106 @@
+<h1>{{ title }}</h1>
+
+<div class="message success" *ngIf="status == 1">
+  El proyecto se ha {{ action }} satisfactoriamente. Puedes
+  <a [routerLink]="['/proyecto/', saveProject._id]">verlo aqui</a>
+</div>
+<div class="message failed" *ngIf="status == -1">
+  El proyecto no se ha {{ action }}. Error en la operacion.
+</div>
+
+<form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
+  <div class="form-group">
+    <label for="exampleFromControlText1">Nombre</label>
+    <input
+      type="text"
+      id="exampleFromControlText1"
+      name="name"
+      class="form-control form-control-lg"
+      #name="ngModel"
+      [(ngModel)]="project.name"
+      required
+    />
+    <span *ngIf="name.touched && !name.valid">El nombre es obligatorio.</span>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Descripcion</label>
+    <textarea
+      class="form-control form-control-lg"
+      id="exampleFormControlTextarea1"
+      rows="3"
+      name="description"
+      #description="ngModel"
+      [(ngModel)]="project.description"
+      required
+    ></textarea>
+    <span *ngIf="description.touched && !description.valid">
+      La descripcion es obligatoria.
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="exampleFromControlText1">Categoria</label>
+    <input
+      type="text"
+      name="category"
+      id="exampleFromControlText1"
+      class="form-control form-control-lg"
+      #category="ngModel"
+      [(ngModel)]="project.category"
+      required
+    />
+    <span *ngIf="category.touched && !category.valid">
+      La categoria es obligatoria.
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="exampleFromControlText1">Lenguajes</label>
+    <input
+      type="text"
+      name="languages"
+      id="exampleFromControlText1"
+      class="form-control form-control-lg"
+      #languages="ngModel"
+      [(ngModel)]="project.languages"
+      required
+    />
+    <span *ngIf="languages.touched && !languages.valid">
+      Los lenguajes son obligatorios.
+    </span>
+  </div>
+  <div class="form-group">
+    <label for="exampleFromControlNumber1">Año</label>
+    <input
+      type="number"
+      name="year"
+      id="exampleFromControlNumber1"
+      class="form-control form-control-lg"
+      #year="ngModel"
+      [(ngModel)]="project.year"
+      required
+    />
+    <span *ngIf="year.touched && !year.valid"> El año es obligatorio. </span>
+  </div>
+  <div class="form-group mb-3">
+    <div class="custom-file">
+      <input
+        (change)="fileChangeEvent($event)"
+        type="file"
+        class="custom-file-input"
+        id="inputGroupFile02"
+      />
+      <label
+        class="custom-file-label"
+        for="inputGroupFile02"
+        aria-describedby="inputGroupFileAddon02"
+        >Imagen</label
+      >
+    </div>
+  </div>
+  <button
+    [disabled]="!projectForm.form.valid"
+    type="submit"
+    class="btn btn-primary"
+  >
+    {{ button }}
+  </button>
+</form>

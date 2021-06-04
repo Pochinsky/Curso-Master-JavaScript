@@ -1,0 +1,42 @@
+.darkmode .global {
+  background-color: #313131;
+}
+
+.darkmode .nav {
+  background-color: #515151;
+}
+
+.darkmode .sidebar__h4,
+.darkmode .articles .article__h2 {
+  color: #afafaf;
+}
+
+.darkmode .sidebar__p,
+.darkmode .article__p {
+  color: #cfcfcf;
+}
+
+.darkmode .form-identify .form-identify__label {
+  color: #cfcfcf;
+}
+
+.darkmode .form-identify .form-identify__input {
+  background-color: #515151;
+  box-shadow: 0 0 3px #afafaf;
+}
+
+#lightimg {
+  display: none;
+}
+
+.darkmode .ui-accordion-content {
+  color: #cfcfcf;
+  background-color: #515151;
+  border: none;
+}
+
+.darkmode .ui-accordion-header {
+  background-color: #515151;
+  color: #cfcfcf;
+  border: none;
+}

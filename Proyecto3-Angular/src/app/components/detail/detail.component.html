@@ -1,0 +1,39 @@
+<div class="message failed" *ngIf="!available">
+  <p>Funcionalidad temporalmente deshabilitada</p>
+</div>
+<h2>{{ project.name }}</h2>
+<div class="project">
+  <div class="column">
+    <div class="entry-col">
+      <div>
+        <img src="{{ url + './get-image/' + project.image }}" />
+      </div>
+    </div>
+    <div class="entry-col">
+      <div>
+        {{ project.name }}
+      </div>
+      <div>{{ project.description }}</div>
+      <div>{{ project.category }}</div>
+      <div>{{ project.languages }}</div>
+      <div>{{ project.year }}</div>
+      <div id="false" *ngIf="confirm == false">
+        <div class="change-buttons">
+          <a class="not-allowed" (click)="nonAvailable(false)">Editar</a>
+          <a class="remove-project" (click)="setConfirm(!confirm)">Borrar</a>
+          <a class="back-button" [routerLink]="['/proyectos']">Volver</a>
+        </div>
+      </div>
+      <div id="true" *ngIf="confirm == true">
+        <p>Segur@ que deseas eliminar el proyecto definitivamente?</p>
+        <div class="change-buttons" *ngIf="confirm == true">
+          <a class="edit-project" (click)="setConfirm(!confirm)">Cancelar</a>
+          <a class="remove-project" (click)="removeProject(project._id)"
+            >Borrar Definitivamente</a
+          >
+          <a class="back-button" [routerLink]="['/proyectos']">Volver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

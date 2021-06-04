@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <!-- metas -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JQuery -->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- bxSlider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"
+      type="text/javascript"
+    ></script>
+    <!-- moment -->
+    <script src="js/moment.js" type="text/javascript"></script>
+    <!-- form validation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!-- My scripts -->
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- CSS styles -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <!-- title -->
+    <title>Practicando JS</title>
+  </head>
+  <body>
+    <!-- change theme -->
+    <div class="theme">
+      <div id="darkmode">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-moon"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path
+            d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+          />
+        </svg>
+      </div>
+      <div id="lightmode">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-sun"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#ffffff"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"
+          />
+        </svg>
+      </div>
+    </div>
+    <!-- /change theme -->
+    <!-- header -->
+    <div class="global">
+      <header class="header">
+        <div class="header__container">
+          <h1 class="header__container-h1">Practicando JavaScript</h1>
+        </div>
+      </header>
+      <!-- /header -->
+      <!-- nav -->
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__ul-li">
+            <a class="nav__ul-a" href="index.html">Inicio</a>
+          </li>
+          <li class="nav__ul-li">
+            <a class="nav__ul-a" href="clock.html">Reloj</a>
+          </li>
+          <li class="nav__ul-li">
+            <a class="nav__ul-a" href="about.html">Sobre Mi</a>
+          </li>
+          <li class="nav__ul-li">
+            <a class="nav__ul-a" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /nav -->
+      <!-- main -->
+      <main class="main">
+        <!-- slider -->
+        <div class="slider-container">
+          <div class="slider">
+            <div>
+              <img src="img/rojo.jpg" title="Hojas Rojas" />
+            </div>
+            <div>
+              <img src="img/cielo.jpg" title="cielo azul" />
+            </div>
+            <div>
+              <img src="img/hojas.jpg" title="Hojas Verdes" />
+            </div>
+          </div>
+        </div>
+        <!-- /slider -->
+        <!-- articles -->
+        <section class="articles">
+          <!-- load articles by JavaScript -->
+        </section>
+        <!-- /articles -->
+        <!-- sidebar -->
+        <aside class="sidebar">
+          <img class="sidebar__img" src="img/caracol.jpg" alt="caracol" />
+          <!-- who i am -->
+          <h4 class="sidebar__h4">Quien Soy?</h4>
+          <p class="sidebar__p">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et aliquam
+            nesciunt nulla distinctio assumenda id quos itaque, perferendis
+            vitae velit debitis, quas tempora fugit, rem magnam quidem voluptas?
+            Unde. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic
+            illum tempora, unde a suscipit nemo reiciendis. Quisquam eum quasi
+            eius numquam eaque est at, ab maxime, quod sed dignissimos
+            doloribus? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Doloribus illo voluptate ullam velit non aut aspernatur saepe, ad
+            quibusdam nisi maxime dignissimos ipsam! Quia officia ipsum
+            quibusdam quos magnam deserunt. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Natus odio odit dolores ab reiciendis
+            eos nisi asperiores laudantium. Obcaecati, impedit quam. Blanditiis
+            voluptatibus nemo exercitationem accusamus commodi sed culpa quos!
+          </p>
+          <div class="quit">
+            <a class="quit__button" href="#">Salir</a>
+          </div>
+          <!-- /who i am -->
+          <!-- login -->
+          <div class="login">
+            <h4 class="sidebar__h4">Identificate</h4>
+            <form
+              class="form-identify"
+              action=""
+              method="get"
+              accept-charset="utf-8"
+            >
+              <label class="form-identify__label" for="name">Nombre</label>
+              <input
+                class="form-identify__input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ej: Pedro"
+              />
+              <label class="form-identify__label" for="email">E-mail</label>
+              <input
+                class="form-identify__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Ej: correo@correo.com"
+              />
+              <label class="form-identify__label" for="password"
+                >Password</label
+              >
+              <input
+                class="form-identify__input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Ingrese Password"
+              />
+              <input
+                class="form-identify__submit"
+                type="submit"
+                value="Entrar"
+              />
+            </form>
+          </div>
+          <!-- /login -->
+        </aside>
+      </main>
+    </div>
+    <!-- up button -->
+    <a class="up-page" href="#"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="icon icon-tabler icon-tabler-chevrons-up"
+        width="100"
+        height="100"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="#ffffff"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <polyline points="7 11 12 6 17 11" />
+        <polyline points="7 17 12 12 17 17" /></svg
+    ></a>
+    <!-- /up button -->
+    <!-- footer -->
+    <footer class="footer">
+      <p class="footer__p">Desarrollado por Tomas Guttman.</p>
+      <p class="footer__p">
+        Basado en: Master en JavaScript de Victor Robles &copy;
+      </p>
+    </footer>
+    <!-- /footer -->
+  </body>
+</html>

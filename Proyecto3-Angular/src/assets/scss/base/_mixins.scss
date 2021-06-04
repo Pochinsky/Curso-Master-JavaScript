@@ -1,0 +1,24 @@
+/** Media Queries **/
+@mixin minimum {
+    @media (min-width: #{$minimum}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media (min-width: #{$phone}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("tags.css");
+@import url("header.css");
+@import url("nav.css");
+@import url("global.css");
+@import url("article.css");
+@import url("main.css");
+@import url("sidebar.css");
+@import url("darkmode.css");
+@import url("theme.css");
+@import url("form.css");
+@import url("footer.css");
+
+.ui-accordion-header.ui-state-active {
+  background-color: #3e670f;
+  border: none;
+}
+
+.acordeon {
+  width: 70%;
+  margin: 2rem auto;
+  font-size: 2rem;
+}
+
+.clock {
+  margin: 2rem auto;
+  display: block;
+}
+
+.clock p {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.quit .quit__button {
+  display: inline;
+  margin: 1rem auto;
+  background-color: #af0000;
+  color: #fff;
+  box-shadow: 0 0 2px #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.quit .quit__button:hover {
+  background-color: #cf0000;
+}
+
+.up-page {
+  background-color: #3e670f;
+  display: block;
+  padding: 0.5rem 0;
+  display: flex;
+  width: 30%;
+  margin: 1rem auto;
+  justify-content: center;
+}
+
+.contact-title {
+  text-align: center;
+  margin: 1rem auto;
+}

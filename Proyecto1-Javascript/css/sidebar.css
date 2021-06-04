@@ -1,0 +1,27 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar .sidebar__img {
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.sidebar .sidebar__h4 {
+  font-size: 3rem;
+  text-align: center;
+  color: #353232;
+}
+
+.sidebar__p {
+  text-align: justify;
+}
+
+.sidebar .identify {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  align-items: center;
+}

@@ -1,0 +1,18 @@
+<header>
+  <nav>
+    <a [routerLink]="['/sobre-mi']" routerLinkActive="actived">Sobre Mi</a>
+    <a [routerLink]="['/proyectos']" routerLinkActive="actived">Proyectos</a>
+    <a class="logo" href="/">TG</a>
+    <a [routerLink]="['/contacto']" routerLinkActive="actived">Contacto</a>
+    <a [routerLink]="['/crear-proyecto']" routerLinkActive="actived"
+      >Crear Proyecto</a
+    >
+  </nav>
+</header>
+<section class="container">
+  <router-outlet></router-outlet>
+</section>
+<footer>
+  <p>Desarrollado por Tomas Guttman.</p>
+  <p>basado en: Master en JavaScript de Victor Robles &copy;</p>
+</footer>

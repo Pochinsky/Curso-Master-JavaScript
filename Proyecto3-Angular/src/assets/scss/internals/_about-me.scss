@@ -1,0 +1,33 @@
+.title {
+    width: 70%;
+    margin: 2rem auto 80px auto;
+    text-align: center;
+    .link {
+        width: 70%;
+        margin: 2rem auto 80px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blueLinkedin;
+        font-weight: $bold;
+    }
+    .title__h1 {
+        font-family: $font-zcool;
+        font-size: 5rem;
+        border-bottom: 1px solid $gray;
+        padding: 1rem 0;
+    }
+}
+
+.about {
+    width: 70%;
+    margin: 2rem auto 80px auto;
+    .about__h2 {
+        border-bottom: 1px solid $gray;
+        
+    }
+    .about__p {
+        padding: 3rem 0;
+        text-align: justify;
+    }
+}

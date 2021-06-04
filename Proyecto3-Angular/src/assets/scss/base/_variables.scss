@@ -1,0 +1,25 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Suez+One&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Suez+One&family=ZCOOL+KuaiLe&display=swap');
+$font-oxygen: 'Oxygen', sans-serif;
+$font-suez: 'Suez One', serif;
+$font-zcool: 'ZCOOL KuaiLe', cursive;
+// Size of Media Queries
+$minimum: 155px;
+$phone: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+// Fonts size
+$light: 300;
+$regular: 400;
+$bold: 700;
+$superBold: 900;
+// colors
+$red: rgb(164,58,53);
+$blue: rgb(53, 103, 164);
+$green: rgb(102, 164, 53);
+$orange: rgb(255,155,0);
+$blueLinkedin: rgb(4, 116, 180);
+$white: rgb(255, 255, 255);
+$gray: rgb(204, 204, 204);
+$black: rgb(0, 0, 0);

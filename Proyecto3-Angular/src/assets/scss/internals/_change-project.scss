@@ -1,0 +1,72 @@
+.current-image {
+    img {
+        margin: 0 auto;
+        width: 30%;
+    }
+}
+
+.change-buttons {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: 0 auto;
+    column-gap: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    .edit-project,
+    .remove-project,
+    .back-button,
+    .not-allowed {
+        width: 100%;
+        border: none;
+        outline: none;
+        display: block;
+        margin: 4rem auto;
+        padding: 2.5rem 1rem;
+        text-transform: uppercase;
+        color: $black;
+        text-decoration: none;
+    }
+    .edit-project {
+        background-color: rgba($orange, 0.9);
+        transition: background-color, .5s, transform, .5s;
+        &:hover {
+            background-color: lighten($orange, 10);
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    }
+    .remove-project {
+        background-color: rgba($red, 0.9);
+        transition: background-color, .5s, border-radius, .5s;
+        &:hover {
+            background-color: lighten($red, 10);
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+    }
+    .back-button {
+        background-color: rgba($blue, 0.9);
+        transition: background-color, .5s, border-radius, .5s;
+        &:hover {
+            background-color: lighten($blue, 10);
+            border-radius: 1rem;
+        }
+    }
+    .not-allowed {
+        opacity: 0.4;
+        cursor: not-allowed;
+        background-color: darken($gray,40);
+        transition: background-color, .5s, border-radius, .5s;
+        &:hover {
+            border-radius: 1rem;
+        }
+    }
+}
+
+@include tablet {
+    .change-buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

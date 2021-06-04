@@ -1,0 +1,18 @@
+<h1>Mis Proyectos</h1>
+<div class="project-container">
+  <section class="table" *ngFor="let project of projects">
+    <a class="column" [routerLink]="['/proyecto', project._id]">
+      <div class="entry-col">
+        <div>
+          <img src="{{ url + './get-image/' + project.image }}" />
+        </div>
+      </div>
+      <div class="entry-col">
+        <div>
+          {{ project.name }}
+        </div>
+        <div>{{ project.languages }}</div>
+      </div>
+    </a>
+  </section>
+</div>
